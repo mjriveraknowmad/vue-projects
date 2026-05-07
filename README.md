@@ -15,7 +15,7 @@ Créditos:
 3. Table https://daisyui.com/components/table/#table-with-a-row-that-highlights-on-hover
 4. Buttons https://daisyui.com/components/button/#square-button-and-circle-button
 5. Icon Svg https://www.svgrepo.com/
-6. Modal https://daisyui.com/components/modal/#dialog-modal
+6. Modal https://daisyui.com/components/modal/#dialog-modal y https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/dialog
 ...
 
 
