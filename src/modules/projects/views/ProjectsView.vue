@@ -11,11 +11,23 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="project in projectsStore.projectList" :key="project.id" class="hover">
-          <th>{{ project.id }}</th>
-          <td>{{ project.name }}</td>
-          <td>{{ project.tasks.length }}</td>
-          <td>Purple</td>
+        <tr
+          v-for="(project, index) in projectsStore.projectsWithCompletion"
+          :key="project.id"
+          class="hover"
+        >
+          <th>{{ index + 1 }}</th>
+          <td>
+            <span @dblclick="console.log('dbclick')">{{ project.name }}</span>
+          </td>
+          <td>{{ project.taskCount }}</td>
+          <td>
+            <progress
+              class="progress progress-primary w-56"
+              :value="project.completion"
+              max="100"
+            ></progress>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -64,13 +76,11 @@ import FabButton from '@/modules/common/components/FabButton.vue';
 import InputModal from '@/modules/common/components/InputModal.vue';
 import AddCircle from '@/modules/common/icons/AddCircle.vue';
 import ModalIcon from '@/modules/common/icons/ModalIcon.vue';
-import { useProjectsStore } from '@/modules/projects/store/projects.store';
 import { ref } from 'vue';
+import { useProjectsStore } from '../store/projects.store';
 
 const modalOpen = ref(false);
 const customModalOpen = ref(false);
 
 const projectsStore = useProjectsStore();
-
-
 </script>
