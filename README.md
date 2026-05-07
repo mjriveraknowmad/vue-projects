@@ -9,7 +9,14 @@ Temas tratados:
 5. DaisyUI
 6. Modals
 
-Créditos: https://knowmadmood.udemy.com/course/vuejs-fh/learn/lecture/43915320#questions/19112802
+Créditos: 
+1. https://knowmadmood.udemy.com/course/vuejs-fh/learn/lecture/43915320#questions/19112802
+2. Menu https://daisyui.com/components/menu/#collapsible-submenu
+3. Table https://daisyui.com/components/table/#table-with-a-row-that-highlights-on-hover
+4. Buttons https://daisyui.com/components/button/#square-button-and-circle-button
+5. Icon Svg https://www.svgrepo.com/
+...
+
 
 ## Recommended IDE Setup
 
